@@ -8,9 +8,133 @@ body {
 .all {
 	text-align : left;
 	width : 700px;
+	height: 721px;
 	margin : 100px auto;
 	min-height : 600px;
 	background-image : url(bg.jpg);
 	border : 4px solid red;
 }
 
+header {
+	background-image: url(bar1.png);
+	height: 25px;
+	margin-top: -8px;
+}
+
+.menu {
+	position: relative;
+	margin-right: 20px;
+	margin-left: 20px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	top: 3px;
+}
+
+header:hover {
+	background-image: url(bar2.png);
+	height: 25px;
+}
+
+header:hover .menu {
+	color: black;
+}
+
+article {
+	background-color: rgba(255, 255, 255, 0.39);
+	padding: 10px;
+	z-index: 1;
+	position: relative;
+	top: -100px;
+}
+
+h1 {
+	margin-top: 0px;
+	margin-bottom: 2px;
+}
+
+p {
+	margin: 0px;
+}
+
+#title {
+	position: absolute;
+	top: 60px;
+}
+
+#saw {
+	position: relative;
+	left: -50px;
+}
+
+#hammer {
+	position: relative;
+	left: 265px;
+	top: -65px;
+}
+
+#pincers {
+	position: relative;
+	top: 160px;
+	right: -250px;
+}
+
+#screwdriver {
+	position: relative;
+	right: -570px;
+	top: -160px;
+}
+
+table {
+	visibility: hidden;
+	position: relative;
+	left: 200px;
+	top: -60px;
+}
+
+#toolbox:hover table tr{
+	visibility: initial;
+	background-color: white;
+	padding: 5px;
+	z-index: 5;
+}
+
+td {
+	border: black 2px solid;
+	padding: 5px;
+}
+
+td:hover {
+	background-color: yellow;
+	color: black;
+	z-index: 5;
+}
+
+#toolbox a {
+	text-decoration: none;
+	color: grey;
+}
+
+#saw:hover {
+	position: relative;
+	left: -45px;
+	top: 5px;
+}
+
+#hammer:hover {
+	position: relative;
+	left: 265px;
+	top: -65px;
+}
+
+#pincers:hover {
+	position: relative;
+	top: 160px;
+	right: -250px;
+}
+
+#screwdriver:hover {
+	position: relative;
+	right: -570px;
+	top: -160px;
+}
