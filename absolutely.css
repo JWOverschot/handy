@@ -8,7 +8,6 @@ body {
 .all {
 	text-align : left;
 	width : 700px;
-	height: 721px;
 	margin : 100px auto;
 	min-height : 600px;
 	background-image : url(bg.jpg);
@@ -43,9 +42,7 @@ header:hover .menu {
 article {
 	background-color: rgba(255, 255, 255, 0.39);
 	padding: 10px;
-	z-index: 1;
-	position: relative;
-	top: -100px;
+	margin-top: 75px;
 }
 
 h1 {
@@ -88,31 +85,36 @@ p {
 table {
 	visibility: hidden;
 	position: relative;
-	left: 200px;
+	right: 1px;
 	top: -60px;
 }
 
-#toolbox:hover table tr{
+#toolbox{
+	position: absolute;
+}
+
+#toolbox:hover table tr td{
 	visibility: initial;
-	background-color: white;
-	padding: 5px;
-	z-index: 5;
 }
 
-td {
+table tr td {
+	padding: 5px;
 	border: black 2px solid;
+	background-color: white;
+}
+
+td a {
 	padding: 5px;
-}
-
-td:hover {
-	background-color: yellow;
-	color: black;
-	z-index: 5;
-}
-
-#toolbox a {
 	text-decoration: none;
 	color: grey;
+}
+
+td:hover a{
+	color: black;
+}
+
+td:hover{
+	background-color: #ffffb3;
 }
 
 #saw:hover {
@@ -120,21 +122,25 @@ td:hover {
 	left: -45px;
 	top: 5px;
 }
-
-#hammer:hover {
-	position: relative;
-	left: 265px;
-	top: -65px;
+#humanfactor {
+	color: blue;
+	cursor: pointer;
 }
 
-#pincers:hover {
-	position: relative;
-	top: 160px;
-	right: -250px;
+#humanfactor_content{
+	visibility: hidden;
+	color: black;
+	background-color: white;
+	border: 2px blue solid;
+	border-radius: 10px;
+	width: 210px;
+	padding: 5px;
+	position: absolute;
+	right: 5px;
+	margin-top: 17px;
+	cursor: initial;
 }
 
-#screwdriver:hover {
-	position: relative;
-	right: -570px;
-	top: -160px;
+#humanfactor:hover #humanfactor_content{
+	visibility: initial;
 }
